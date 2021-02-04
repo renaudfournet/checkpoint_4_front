@@ -62,7 +62,7 @@ export default function Navigation() {
     <div style={{display: 'flex', justifyContent: 'center', backgroundColor: 'black'}}> 
       {['MENU'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)} style={{color: 'white', fontWeight: "bold"}}>{anchor}</Button>
+          <Button onClick={toggleDrawer(anchor, true)} style={{color: 'white', fontWeight: "bold", fontSize: "20px"}}>{anchor}</Button>
           <Drawer className={classes.root} anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>

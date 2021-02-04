@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Jumbotron, Container, Button } from 'reactstrap';
 
 const HomeCard = (props) => {
@@ -19,17 +20,15 @@ const HomeCard = (props) => {
   return (
     <div style={{display: 'flex', flexWrap: "wrap", justifyContent: 'space-evenly', margin: '200px'}}>
       <Jumbotron fluid style={styleCard}>
-        <Container fluid style={{alignItems: 'center' }}>
+        <Container style={{color: "white", alignItems: 'center'}} tag={Link} to="/music" fluid>
           <h1 className="display-3">MUSIC</h1>
           <p className="lead">Listen our music here</p>
-          <Button color="primary">Click here</Button>{' '}
         </Container>
       </Jumbotron>
       <Jumbotron fluid style={styleCard}>
-        <Container fluid style={{alignItems: 'center'}}>
+        <Container style={{color: "white", alignItems: 'center'}} tag={Link} to="/contact" fluid>
           <h1 className="display-3">CONTACT</h1>
           <p className="lead">Contact us</p>
-          <Button color="primary">Click here</Button>{' '}
         </Container>
       </Jumbotron>
     </div>

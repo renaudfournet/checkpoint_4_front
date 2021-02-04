@@ -1,6 +1,8 @@
 import HomeCard from "./HomeCard";
 import { headerimg } from '../images';
 
+import "../index.css"
+
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 function Home() {
@@ -16,9 +18,9 @@ function Home() {
   const name = {
       display: 'flex',
       justifyContent: 'center',
-      fontSize: 40,
+      fontSize: 60,
       color: 'white',
-      padding: '50px'
+      padding: '50px',
     },
     header = {
       backgroundColor: 'black'
@@ -51,7 +53,7 @@ function Home() {
     <div style={header}>
       <h3>
         <div>
-          <span style={name}>VERBAL KINT'S GONE</span>
+          <span className="title" style={name}>VERBAL KINT'S GONE</span>
         </div>
         <p style={city}> based in Rennes </p>
       </h3>
